@@ -73,9 +73,11 @@ CREATE TABLE dbo.RecipeIngredients (
 
 -- Alternative_Recipes table
 CREATE TABLE dbo.AlternativeRecipes (
-    alternativeRecipeId INT IDENTITY(1,1) PRIMARY KEY,
-    recipeId INT,
-    FOREIGN KEY (recipeId) REFERENCES dbo.Recipes(recipeId)
+    recipeId INT NOT NULL,
+    alternativeRecipeId INT NOT NULL,
+    PRIMARY KEY (recipeId, alternativeRecipeId),
+    FOREIGN KEY (recipeId) REFERENCES dbo.Recipes(recipeId),
+    FOREIGN KEY (alternativeRecipeId) REFERENCES dbo.Recipes(recipeId)
 );
 
 -- Alternative_Ingredients table
