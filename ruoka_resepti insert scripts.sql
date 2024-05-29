@@ -188,7 +188,7 @@ INSERT INTO dbo.CookingHardware (title) VALUES
 
 -- Insert data into Recipe_Hardware junction table
 -- Assuming the first recipe has been added and its ID is 1, and two hardware items have IDs 1 and 2
-INSERT INTO dbo.RecipeHardware (recipeId, hardware_ID) VALUES   
+INSERT INTO dbo.RecipeHardware (recipeId, hardware_Id) VALUES   
 (1, 1),
 (2, 2),  
 (3, 3),  
