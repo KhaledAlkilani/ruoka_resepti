@@ -1,0 +1,6 @@
+--Retrieve other recipes in the same category, excluding the original recipe
+SELECT title
+FROM dbo.Recipes
+WHERE categoryId = 1
+AND title <> 'Scrambled Eggs ';
+
