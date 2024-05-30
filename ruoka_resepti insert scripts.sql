@@ -1,7 +1,7 @@
 -- Insert data into Users table
 INSERT INTO dbo.Users (name, email) VALUES   
-('Harry Potter', 'magician12@edu.hel.fi'),  
-('Alice Smith', 'alice@hotmail.com'),  
+('Khaled Alkilani', 'magician12@edu.hel.fi'),  
+('Saad Qalib', 'alice@hotmail.com'),  
 ('Mikel Arteta', 'bob21972@outlook.com'),  
 ('Emma Stones', 'emma.stones@gmail.com'),  
 ('Joni Lehtinen', 'mike00@hotmail.com');  
