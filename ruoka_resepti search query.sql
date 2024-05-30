@@ -1,3 +1,4 @@
+-- Retrieve recipes that only contain specified ingredients (ingredient IDs: 1, 2, 3)
 SELECT 
     r.recipeId, 
     r.title 
