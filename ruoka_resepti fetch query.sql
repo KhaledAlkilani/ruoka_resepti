@@ -1,3 +1,4 @@
+-- Retrieve original and alternative recipes along with their titles
 SELECT 
     R.recipeId AS OriginalRecipeID,
     R.title AS OriginalRecipeTitle,
