@@ -1,0 +1,6 @@
+-- Retrieve original and alternative ingredients for Recipe 1
+SELECT i.title AS originalIngredient,a.title AS alternativeIngredient
+FROM dbo.Ingredients i
+JOIN dbo.AlternativeIngredients ai ON i.ingredientId = ai.fk_ingredientId
+JOIN dbo.Ingredients a ON ai.fk_recipeId = a.ingredientId
+WHERE ai.fk_recipeId = 1;
